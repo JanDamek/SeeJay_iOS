@@ -1,0 +1,15 @@
+//
+//  comAppDelegate.h
+//  SeeJay_iOS7
+//
+//  Created by Jan Damek on 18.10.13.
+//  Copyright (c) 2013 Digital Scope. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface comAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end
