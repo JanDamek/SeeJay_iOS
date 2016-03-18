@@ -13,26 +13,12 @@
 
 @synthesize act;
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.canDisplayBannerAds = true;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    //    NSLog(@"%@",podcast);
     [self performSelectorInBackground:@selector(loadPodcast) withObject:nil];
 }
 
@@ -49,12 +35,6 @@
 
 -(void)refreshTable{
     [self.tableView reloadData];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -102,13 +82,6 @@
 //    headerLabel.text =  [[d.archive objectAtIndex:section] valueForKey:@"title"];
     headerLabel.textColor = [UIColor grayColor];
     
-//    UILabel *detailLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-//    detailLabel.backgroundColor = [UIColor clearColor];
-//    detailLabel.textColor = [UIColor darkGrayColor];
-//    detailLabel.text = @"Some detail text";
-//    detailLabel.font = [UIFont systemFontOfSize:12];
-//    detailLabel.frame = CGRectMake(70,33,230,25);
-    
     // create the imageView with the image in it
     UIImageView *imageView = [[UIImageView alloc] initWithImage:myImage];
     imageView.frame = CGRectMake(0,0,self.view.frame.size.width,30);
@@ -116,7 +89,6 @@
     
     [customView addSubview:imageView];
     [customView addSubview:headerLabel];
-//    [customView addSubview:detailLabel];
     
     return customView;
 }
@@ -131,51 +103,10 @@
     a = [[a objectForKey:@"items"] objectAtIndex:indexPath.row];
     
     cell.textLabel.text = [a valueForKey:@"title"];
-//    cell.detailTextLabel.text = [a valueForKey:@"description"];
-//    if ([cell.detailTextLabel.text isEqual:@""])
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"Počet epizod: %ld",(long)[[a objectForKey:@"items"] count]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Počet epizod: %ld",(long)[[a objectForKey:@"items"] count]];
     
     return cell;
 }
-
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
 
 #pragma mark - Table view delegate
 

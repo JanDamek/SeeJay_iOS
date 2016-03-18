@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface ArchiveDetailViewController : UITableViewController
+@interface ArchiveDetailViewController : UITableViewController<ADBannerViewDelegate>
 
 @end

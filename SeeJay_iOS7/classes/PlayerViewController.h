@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 #import "comPlayer.h"
 
-@interface PlayerViewController : UIViewController <comPlayerDelegate>
+@interface PlayerViewController : UIViewController <comPlayerDelegate,ADBannerViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *startStopButton;
 @property (strong, nonatomic) IBOutlet UILabel *dlouhyNazev;

@@ -2,7 +2,7 @@
 //  PlayerViewController.m
 //  SeeJay Radio
 //
-//  Created by Tomas Vanek on 2/21/13.
+//  Created by Jan Damek on 2/21/13.
 //  Copyright (c) 2013 SeeJayRadio. All rights reserved.
 //
 
@@ -33,16 +33,6 @@
 
 static NSString *rssURL = @"http://seejay.cz/rss.php";
 
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -53,6 +43,8 @@ static NSString *rssURL = @"http://seejay.cz/rss.php";
     
     [self.ani setHidesWhenStopped:YES];
     [self.ani stopAnimating];
+    
+    self.canDisplayBannerAds=true;
 }
 
 -(void)updateTimer{
@@ -66,12 +58,6 @@ static NSString *rssURL = @"http://seejay.cz/rss.php";
     AppDelegate *d = (AppDelegate*)[[UIApplication sharedApplication]delegate];
 
     d.player.delegate = self;
-    
-    if (d.player.isPlaying){
-        [self.startStopButton setImage:[UIImage imageNamed:@"stopbutton_inactive_272x272_px_retina.png"] forState:UIControlStateNormal];
-    }else{
-        [self.startStopButton setImage:[UIImage imageNamed:@"playbutton_active_272x272_px_retina.png"] forState:UIControlStateNormal];
-    }    
     
     self.dlouhyNazev.text = d.lastMeta;
     self.coHralo.text = d.prevMeta;
@@ -94,27 +80,18 @@ static NSString *rssURL = @"http://seejay.cz/rss.php";
     [self.timer invalidate];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 -(void)stopButton:(id)sender{
     AppDelegate *d = (AppDelegate*)[[UIApplication sharedApplication]delegate];
     if (!d.player.isPlaying){
         [d.player play];
-        [self.startStopButton setImage:[UIImage imageNamed:@"stopbutton_inactive_272x272_px_retina.png"] forState:UIControlStateNormal];
     }else{
         [d.player stop];
-        [self.startStopButton setImage:[UIImage imageNamed:@"playbutton_active_272x272_px_retina.png"] forState:UIControlStateNormal];
     }
 }
 
 -(void)preparePlay:(comPlayer *)player{
     self.dlouhyNazev.text = @"";
     [self.ani startAnimating];
-    [self.startStopButton setImage:[UIImage imageNamed:@"stopbutton_inactive_272x272_px_retina.png"] forState:UIControlStateNormal];
 }
 
 -(void)stopPlaying:(comPlayer *)player{
@@ -124,20 +101,16 @@ static NSString *rssURL = @"http://seejay.cz/rss.php";
     d.lastMeta = @"";
     
     [self.ani stopAnimating];
-    
-    [self.startStopButton setImage:[UIImage imageNamed:@"playbutton_active_272x272_px_retina.png"] forState:UIControlStateNormal];
 }
 
 -(void)startPlaying:(comPlayer *)player{
     self.dlouhyNazev.text = @"";
     [self.ani stopAnimating];
-    [self.startStopButton setImage:[UIImage imageNamed:@"stopbutton_inactive_272x272_px_retina.png"] forState:UIControlStateNormal];
 }
 
 -(void)startInteruptPlaying:(comPlayer *)player{
     self.dlouhyNazev.text = @"Načitání do mezipaměti";
     [self.ani startAnimating];
-    [self.startStopButton setImage:[UIImage imageNamed:@"stopbutton_inactive_272x272_px_retina.png"] forState:UIControlStateNormal];
 }
 
 -(void)stopInteruptPlaying:(comPlayer *)player{
@@ -145,7 +118,6 @@ static NSString *rssURL = @"http://seejay.cz/rss.php";
     self.dlouhyNazev.text = d.lastMeta;
     
     [self.ani stopAnimating];
-    [self.startStopButton setImage:[UIImage imageNamed:@"stopbutton_inactive_272x272_px_retina.png"] forState:UIControlStateNormal];
 }
 
 -(void)metaData:(comPlayer *)player meta:(NSString *)meta{
@@ -159,14 +131,12 @@ static NSString *rssURL = @"http://seejay.cz/rss.php";
 }
 
 -(void)setSleepButton:(id)sender{
-    //TODO: nastaveni sleep do delegate
     AppDelegate *d = (AppDelegate*)[[UIApplication sharedApplication]delegate];
     [d sleepButton];
     self.sleepTime.text = [d sleepIntervalToString];
 }
 
 -(void)nactiNovinkaNaPozadi{
-    //nasteni RSS a zobrazeni posledni novinky
     NSData *rssData = [NSData dataWithContentsOfURL:[NSURL URLWithString:rssURL]];
     NSDictionary *rss = [XMLReader dictionaryForXMLData:rssData error:nil];
     rss = [rss objectForKey:@"rss"];
@@ -216,7 +186,6 @@ static NSString *rssURL = @"http://seejay.cz/rss.php";
     self.titleNovinka.text = tit;
     self.descriptionNovinka.text = dec;
     self.imageNovinka.image = image;
-    
 }
 
 -(void)novinkaClick:(id)sender{
@@ -224,11 +193,6 @@ static NSString *rssURL = @"http://seejay.cz/rss.php";
         //otevri prohlizec s url novinky
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[self.link_url stringByReplacingOccurrencesOfString:@"\n" withString:@""]]];
     }
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
 }
 
 @end

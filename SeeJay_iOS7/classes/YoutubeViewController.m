@@ -19,6 +19,8 @@
 
     [self.youtube setDelegate:self];
 	[self.youtube loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.youtube.com/seejayradio"]]];
+    
+    self.canDisplayBannerAds = true;
 }
 
 -(void)viewDidAppear:(BOOL)animated{

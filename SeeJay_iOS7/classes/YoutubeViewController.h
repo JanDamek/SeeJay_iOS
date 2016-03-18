@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface YoutubeViewController : UIViewController<UIWebViewDelegate>
+@interface YoutubeViewController : UIViewController<UIWebViewDelegate,ADBannerViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIWebView *youtube;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *progres;

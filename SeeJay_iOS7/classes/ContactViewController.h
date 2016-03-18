@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface ContactViewController : UIViewController
+@interface ContactViewController : UIViewController<ADBannerViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITabBarItem *tabbar;
 

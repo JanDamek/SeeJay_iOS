@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 #import "XMLReader.h"
 
-@interface ArchivViewController : UITableViewController
+@interface ArchivViewController : UITableViewController<ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *act;
 
