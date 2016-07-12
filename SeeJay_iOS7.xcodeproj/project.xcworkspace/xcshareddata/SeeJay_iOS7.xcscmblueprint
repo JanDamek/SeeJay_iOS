@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DA520230C6C52BA23D3D0041B8E4ED34008396C5+++516E8C9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "DA520230C6C52BA23D3D0041B8E4ED34008396C5+++516E8C9" : {
+
+    },
+    "ed817268-f295-4be0-9a57-a7ea9e64c6b5++505+++7C400B7" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DA520230C6C52BA23D3D0041B8E4ED34008396C5+++516E8C9" : 0,
+    "ed817268-f295-4be0-9a57-a7ea9e64c6b5++505+++7C400B7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ADA66A84-12E1-43D1-85D2-DE4B4CFFFA16",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DA520230C6C52BA23D3D0041B8E4ED34008396C5+++516E8C9" : "SeeJay_iOS\/",
+    "ed817268-f295-4be0-9a57-a7ea9e64c6b5++505+++7C400B7" : "SeeJay_iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SeeJay_iOS7",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SeeJay_iOS7.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.digitalscope.cz\/svn\/seejay-ios7",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DA520230C6C52BA23D3D0041B8E4ED34008396C5+++516E8C9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JanDamek\/SeeJay_iOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ed817268-f295-4be0-9a57-a7ea9e64c6b5++505+++7C400B7"
+    }
+  ]
+}

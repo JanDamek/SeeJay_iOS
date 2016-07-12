@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81CDF2C32DB7DA5A4DCF4184 /* libPods-SeeJay_iOS7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278BCF86E0DA6BD25EF4248D /* libPods-SeeJay_iOS7.a */; };
 		C403EEC11825BEFB00CF5F29 /* ipad-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C403EEC01825BEFB00CF5F29 /* ipad-logo.png */; };
 		C4923B7D18295BC30092F0EF /* ipad_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C4923B7C18295BC30092F0EF /* ipad_logo.png */; };
 		C4BEBA7318284336004382EF /* stopbutton_active_272x272_px_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BEBA7118284336004382EF /* stopbutton_active_272x272_px_retina.png */; };
@@ -16,7 +17,9 @@
 		C4EBF44018258AEF00DBA079 /* pozadi_640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EBF43D18258AEF00DBA079 /* pozadi_640x1136.png */; };
 		EB7E76F01C89D890002E3AE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7E76EF1C89D890002E3AE1 /* Images.xcassets */; };
 		EB7E76F21C89E514002E3AE1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7E76F11C89E514002E3AE1 /* Launch Screen.storyboard */; };
-		EBAA78B21C85CED10034BCDD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAA78B11C85CED10034BCDD /* iAd.framework */; };
+		EBAFDEF41D352F06008BEBF6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EBAFDEF31D352F06008BEBF6 /* Podfile */; };
+		EBAFDEF71D352FDF008BEBF6 /* ServiceTools.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAFDEF61D352FDF008BEBF6 /* ServiceTools.m */; };
+		EBAFDEF91D353049008BEBF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBAFDEF81D353049008BEBF6 /* GoogleService-Info.plist */; };
 		F51102511811A9F500F910B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51102501811A9F500F910B8 /* Foundation.framework */; };
 		F51102531811A9F500F910B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51102521811A9F500F910B8 /* CoreGraphics.framework */; };
 		F51102551811A9F500F910B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51102541811A9F500F910B8 /* UIKit.framework */; };
@@ -124,6 +127,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		278BCF86E0DA6BD25EF4248D /* libPods-SeeJay_iOS7.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeeJay_iOS7.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CFA91E042B816644062702A /* Pods-SeeJay_iOS7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeeJay_iOS7.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeeJay_iOS7/Pods-SeeJay_iOS7.debug.xcconfig"; sourceTree = "<group>"; };
+		BED997D66751B68D99ABA973 /* Pods-SeeJay_iOS7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeeJay_iOS7.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeeJay_iOS7/Pods-SeeJay_iOS7.release.xcconfig"; sourceTree = "<group>"; };
 		C403EEC01825BEFB00CF5F29 /* ipad-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-logo.png"; sourceTree = "<group>"; };
 		C4923B7C18295BC30092F0EF /* ipad_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_logo.png; sourceTree = "<group>"; };
 		C4BEBA7018284336004382EF /* playbutton_active_272x272_px_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton_active_272x272_px_retina.png; sourceTree = "<group>"; };
@@ -134,7 +140,10 @@
 		C4EBF43D18258AEF00DBA079 /* pozadi_640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pozadi_640x1136.png; sourceTree = "<group>"; };
 		EB7E76EF1C89D890002E3AE1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SeeJay_iOS7/Images.xcassets; sourceTree = "<group>"; };
 		EB7E76F11C89E514002E3AE1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		EBAA78B11C85CED10034BCDD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		EBAFDEF31D352F06008BEBF6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		EBAFDEF51D352FDF008BEBF6 /* ServiceTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceTools.h; sourceTree = "<group>"; };
+		EBAFDEF61D352FDF008BEBF6 /* ServiceTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceTools.m; sourceTree = "<group>"; };
+		EBAFDEF81D353049008BEBF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F511024D1811A9F500F910B8 /* SeeJay_iOS7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeJay_iOS7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51102501811A9F500F910B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F51102521811A9F500F910B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -258,17 +267,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBAA78B21C85CED10034BCDD /* iAd.framework in Frameworks */,
 				F51102531811A9F500F910B8 /* CoreGraphics.framework in Frameworks */,
 				F51102551811A9F500F910B8 /* UIKit.framework in Frameworks */,
 				F51102511811A9F500F910B8 /* Foundation.framework in Frameworks */,
 				F55CDBD61811B80A000AF1A7 /* AudioToolbox.framework in Frameworks */,
+				81CDF2C32DB7DA5A4DCF4184 /* libPods-SeeJay_iOS7.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05E22E597A3D885E6F3C49FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CFA91E042B816644062702A /* Pods-SeeJay_iOS7.debug.xcconfig */,
+				BED997D66751B68D99ABA973 /* Pods-SeeJay_iOS7.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C4F90457181403D1002684BC /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +394,8 @@
 		C4F9052218140D3C002684BC /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				EBAFDEF51D352FDF008BEBF6 /* ServiceTools.h */,
+				EBAFDEF61D352FDF008BEBF6 /* ServiceTools.m */,
 				F5FD8155181E628300E45C9B /* XML */,
 				F5FD8150181E628300E45C9B /* player */,
 				F5FD8161181E630F00E45C9B /* AppDelegate.h */,
@@ -397,12 +417,16 @@
 		F51102441811A9F500F910B8 = {
 			isa = PBXGroup;
 			children = (
+				EBAFDEF81D353049008BEBF6 /* GoogleService-Info.plist */,
+				EBAFDEF31D352F06008BEBF6 /* Podfile */,
 				EB7E76F11C89E514002E3AE1 /* Launch Screen.storyboard */,
+				F5FD8093181E624F00E45C9B /* Storyboard_iPhone7.storyboard */,
 				EB7E76EF1C89D890002E3AE1 /* Images.xcassets */,
 				C4F90457181403D1002684BC /* images */,
 				F51102561811A9F500F910B8 /* SeeJay */,
 				F511024F1811A9F500F910B8 /* Frameworks */,
 				F511024E1811A9F500F910B8 /* Products */,
+				05E22E597A3D885E6F3C49FA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -417,11 +441,11 @@
 		F511024F1811A9F500F910B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EBAA78B11C85CED10034BCDD /* iAd.framework */,
 				F55CDBD51811B80A000AF1A7 /* AudioToolbox.framework */,
 				F51102501811A9F500F910B8 /* Foundation.framework */,
 				F51102521811A9F500F910B8 /* CoreGraphics.framework */,
 				F51102541811A9F500F910B8 /* UIKit.framework */,
+				278BCF86E0DA6BD25EF4248D /* libPods-SeeJay_iOS7.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -429,7 +453,6 @@
 		F51102561811A9F500F910B8 /* SeeJay */ = {
 			isa = PBXGroup;
 			children = (
-				F55CDBCB1811B731000AF1A7 /* storyboards */,
 				C4F9052218140D3C002684BC /* classes */,
 				F51102571811A9F500F910B8 /* Supporting Files */,
 			);
@@ -447,14 +470,6 @@
 				F511025E1811A9F600F910B8 /* SeeJay_iOS7-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F55CDBCB1811B731000AF1A7 /* storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				F5FD8093181E624F00E45C9B /* Storyboard_iPhone7.storyboard */,
-			);
-			name = storyboards;
 			sourceTree = "<group>";
 		};
 		F5FD8150181E628300E45C9B /* player */ = {
@@ -484,9 +499,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F51102791811A9F600F910B8 /* Build configuration list for PBXNativeTarget "SeeJay_iOS7" */;
 			buildPhases = (
+				8BCFFE41975CEA8E329BD3EB /* [CP] Check Pods Manifest.lock */,
 				F51102491811A9F500F910B8 /* Sources */,
 				F511024A1811A9F500F910B8 /* Frameworks */,
 				F511024B1811A9F500F910B8 /* Resources */,
+				D9DB5E6259FB4F29E33B66EF /* [CP] Embed Pods Frameworks */,
+				30A467D2EC0A2A8B5D325D97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -554,7 +572,9 @@
 				F5FD8113181E626200E45C9B /* pozadi_ciste_ipad.png in Resources */,
 				F5FD812A181E626200E45C9B /* seejay_app_icon_114x114_iphone_retina.png in Resources */,
 				F5FD813D181E626200E45C9B /* startscreen.jpg in Resources */,
+				EBAFDEF41D352F06008BEBF6 /* Podfile in Resources */,
 				F5FD810E181E626200E45C9B /* play_ipad.png in Resources */,
+				EBAFDEF91D353049008BEBF6 /* GoogleService-Info.plist in Resources */,
 				F5FD8104181E626200E45C9B /* kontakt_ico@2x.png in Resources */,
 				F5FD8128181E626200E45C9B /* seejay_app_icon_80x80.png in Resources */,
 				F5FD8135181E626200E45C9B /* sleepbutton_active_122x122_px_retina.png in Resources */,
@@ -644,6 +664,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30A467D2EC0A2A8B5D325D97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeeJay_iOS7/Pods-SeeJay_iOS7-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BCFFE41975CEA8E329BD3EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9DB5E6259FB4F29E33B66EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeeJay_iOS7/Pods-SeeJay_iOS7-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F51102491811A9F500F910B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -654,6 +722,7 @@
 				F5FD8163181E630F00E45C9B /* AppDelegate.m in Sources */,
 				F5FD815C181E628300E45C9B /* ContactViewController.m in Sources */,
 				F5FD815F181E628300E45C9B /* XMLReader.m in Sources */,
+				EBAFDEF71D352FDF008BEBF6 /* ServiceTools.m in Sources */,
 				F511025D1811A9F600F910B8 /* main.m in Sources */,
 				F5FD815B181E628300E45C9B /* ArchivViewController.m in Sources */,
 				F5FD815A181E628300E45C9B /* ArchiveDetailViewController.m in Sources */,
@@ -678,6 +747,7 @@
 				F5FD8094181E624F00E45C9B /* en */,
 			);
 			name = Storyboard_iPhone7.storyboard;
+			path = SeeJay_iOS7;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -716,7 +786,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -749,7 +819,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -758,6 +828,7 @@
 		};
 		F511027A1811A9F600F910B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFA91E042B816644062702A /* Pods-SeeJay_iOS7.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -767,7 +838,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SeeJay_iOS7/SeeJay_iOS7-Prefix.pch";
 				INFOPLIST_FILE = "SeeJay_iOS7/SeeJay_iOS7-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.damek.radio.SeeJayRadioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -777,6 +847,7 @@
 		};
 		F511027B1811A9F600F910B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED997D66751B68D99ABA973 /* Pods-SeeJay_iOS7.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -786,10 +857,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SeeJay_iOS7/SeeJay_iOS7-Prefix.pch";
 				INFOPLIST_FILE = "SeeJay_iOS7/SeeJay_iOS7-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.damek.radio.SeeJayRadioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "287a849f-e48b-44d8-b435-e2fb92184493";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

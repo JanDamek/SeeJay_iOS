@@ -5,12 +5,15 @@
 //  Created by Tomas Vanek on 3/25/13.
 //  Copyright (c) 2013 SeeJayRadio. All rights reserved.
 //
+@import GoogleMobileAds;
 
 #import "ContactViewController.h"
+#import "ServiceTools.h"
 
 @interface ContactViewController ()
 
 @property (nonatomic) BOOL volej;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 @end
 
@@ -23,7 +26,7 @@
 {
     [super viewDidLoad];
 
-    self.canDisplayBannerAds = true;
+    [ServiceTools GADInitialization:_bannerView rootViewController:self];
 }
 
 - (void)didReceiveMemoryWarning

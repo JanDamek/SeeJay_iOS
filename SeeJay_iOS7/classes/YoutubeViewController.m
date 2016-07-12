@@ -6,7 +6,15 @@
 //  Copyright (c) 2013 SeeJayRadio. All rights reserved.
 //
 
+@import GoogleMobileAds;
+
 #import "YoutubeViewController.h"
+#import "ServiceTools.h"
+
+@interface YoutubeViewController ()
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+
+@end
 
 @implementation YoutubeViewController
 
@@ -20,7 +28,7 @@
     [self.youtube setDelegate:self];
 	[self.youtube loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.youtube.com/seejayradio"]]];
     
-    self.canDisplayBannerAds = true;
+    [ServiceTools GADInitialization:_bannerView rootViewController:self];
 }
 
 -(void)viewDidAppear:(BOOL)animated{

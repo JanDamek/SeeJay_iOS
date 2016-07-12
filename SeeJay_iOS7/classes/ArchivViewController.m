@@ -6,8 +6,11 @@
 //  Copyright (c) 2013 SeeJayRadio. All rights reserved.
 //
 
+@import GoogleMobileAds;
+
 #import "ArchivViewController.h"
 #import "AppDelegate.h"
+#import "ServiceTools.h"
 
 @implementation ArchivViewController
 
@@ -17,7 +20,9 @@
 {
     [super viewDidLoad];
     
-    self.canDisplayBannerAds = true;
+    GADBannerView *bannerView = [[GADBannerView alloc]initWithAdSize:kGADAdSizeBanner];
+    [self.tableView setTableFooterView:bannerView];
+    [ServiceTools GADInitialization:bannerView rootViewController:self];
     
     [self performSelectorInBackground:@selector(loadPodcast) withObject:nil];
 }

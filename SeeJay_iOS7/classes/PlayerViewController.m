@@ -6,14 +6,18 @@
 //  Copyright (c) 2013 SeeJayRadio. All rights reserved.
 //
 
+@import GoogleMobileAds;
+
 #import "PlayerViewController.h"
 #import "AppDelegate.h"
 #import "XMLReader.h"
+#import "ServiceTools.h"
 
 @interface PlayerViewController ()
 
 @property (nonatomic, weak) NSTimer *timer;
 @property (nonatomic ,weak) NSString *link_url;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 @end
 
@@ -44,7 +48,7 @@ static NSString *rssURL = @"http://seejay.cz/rss.php";
     [self.ani setHidesWhenStopped:YES];
     [self.ani stopAnimating];
     
-    self.canDisplayBannerAds=true;
+    [ServiceTools GADInitialization:_bannerView rootViewController:self];
 }
 
 -(void)updateTimer{

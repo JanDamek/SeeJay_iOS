@@ -6,9 +6,12 @@
 //  Copyright (c) 2013 SeeJayRadio. All rights reserved.
 //
 
+@import GoogleMobileAds;
+
 #import "ArchiveDetailViewController.h"
 #import "AppDelegate.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "ServiceTools.h"
 
 @interface ArchiveDetailViewController()
 
@@ -24,7 +27,9 @@
 {
     [super viewDidLoad];
     
-    self.canDisplayBannerAds = true;
+    GADBannerView *bannerView = [[GADBannerView alloc]initWithAdSize:kGADAdSizeBanner];
+    [self.tableView setTableFooterView:bannerView];
+    [ServiceTools GADInitialization:bannerView rootViewController:self];
 }
 
 #pragma mark - Table view data source
